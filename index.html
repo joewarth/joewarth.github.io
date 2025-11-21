@@ -19,9 +19,6 @@
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
-
-    <!-- Want to add Bootstrap? -->
-    <!-- Visit: https://getbootstrap.com/docs/4.3/getting-started/introduction/ -->
     
   </head>
   
@@ -46,7 +43,12 @@
           <div id="home" class="content-region hide">
             <h2>Home</h2>
             <p>
-              This website showcases personal data science projects.
+              I'm Joe, an Actuarial Predictive Modeling and Data Analysis Specialist with over <span id="years-exp"></span> years of experience in the insurance industry. Consistently recognized as a senior individual contributor, leading technical product development and delivering impactful solutions through advanced statistical modeling and data-driven insights. Expert in collaborating with cross-functional teams, providing technical mentorship and driving innovation across multiple business units. Experienced in end-to-end model development and driving best-in-class results for super-regional and large insurance carriers.
+            </p>
+            <p>
+            </p>
+            <p>
+              Thank you for visiting my profile, and I'm eager to connect with you!
             </p>
           </div>
           
@@ -89,7 +91,7 @@
           <div id="contact" class="content-region hide">
             <h2>Contact</h2>
             <p>
-              <a href="https://www.linkedin.com/in/jwrth"">linkedin/jwrth</a>"
+              <a href="https://www.linkedin.com/in/jwrth">linkedin/jwrth</a>
             </p>
           </div>
           
@@ -102,6 +104,15 @@
     
     <!-- Load additional JS scripts here -->
     <script type="text/javascript" src="script.js"></script>
+
+    <!-- Calculate years of experience dynamically -->
+    <script>
+      const startYear = 2013; // when I started
+      const thisYear  = new Date().getFullYear();
+      const yearsExp  = thisYear - startYear;
+
+      document.getElementById("years-exp").textContent = yearsExp;
+    </script>
     
   </body>
 </html>
