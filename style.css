@@ -139,3 +139,32 @@ ul.main-menu li a.active {
 .show {
   display:block;
 }
+
+/* Project list */
+ul.project-list {
+  margin-left: 0;        /* align with body text */
+  padding-left: 1.6rem;  /* small indent for bullets */
+}
+
+ul.project-list > li {
+  list-style: none;      /* no bullets on the top-level categories */
+  margin-bottom: 1.2rem;
+}
+
+ul.project-list ul {
+  margin-top: 0.4rem;
+  margin-bottom: 0.4rem;
+  padding-left: 1.6rem;  /* bullets for inner list only */
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.5rem;     /* same as body, just bolder */
+}
+
+.project-desc {
+  display: block;
+  font-size: 1.3rem;
+  color: #cfd2da;        /* softer gray to keep it from feeling busy */
+  line-height: 1.4;
+}
