@@ -12,10 +12,21 @@
     <!-- Stylesheets -->
     <!-- Reset default styles and add support for google fonts -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-    <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
    
     <!-- Custom styles -->
     <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      .project-title {
+        font-weight: 700;
+        display: block;
+      }
+      .project-desc {
+        display: block;
+        color: #cfd2da;
+      }
+    </style>
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>    
@@ -53,82 +64,80 @@
           </div>
           
           <div id="projects" class="content-region hide">
-            <p>
-              <ul class="project-list">
-                <li><h3>Data Analysis</h3>
-                  <ul>
-                    <li>
-                      <span class="project-title">Close Ratio Shiny Dashboard</span>
-                      <span class="project-desc">
-                        Interactive Shiny app to explore quote-to-bind close ratios by risk attributes.
-                      </span>
-                    </li>
-                    <li>
-                      <span class="project-title">Pricing Model Interpretability Dashboard</span>
-                      <span class="project-desc">
-                        Dashboard for explaining GLM and ML pricing models to business users such as product and underwriting.
-                      </span>
-                    </li>
-                  </ul>
-                </li>
+            <ul class="project-list">
+              <li><h3>Data Analysis</h3>
+                <ul>
+                  <li>
+                    <span class="project-title">Close Ratio Shiny Dashboard</span>
+                    <span class="project-desc">
+                      Interactive Shiny app to explore quote-to-bind close ratios by risk attributes.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="project-title">Pricing Model Interpretability Dashboard</span>
+                    <span class="project-desc">
+                      Dashboard for explaining GLM and ML pricing models to business users such as product and underwriting.
+                    </span>
+                  </li>
+                </ul>
+              </li>
 
-                <li><h3>Classification Models</h3>
-                  <ul>
-                    <li>
-                      <span class="project-title">Close Ratio Analysis</span>
-                      <span class="project-desc">
-                        Binary classifier predicting likelihood of bind at quote time using producer and risk attributes.
-                      </span>
-                    </li>
-                    <li>
-                      <span class="project-title">Claims Fraud Detection</span>
-                      <span class="project-desc">
-                        Fraud detection model to prioritize suspicious claims for SIU review.
-                      </span>
-                    </li>
-                  </ul>
-                </li>
+              <li><h3>Classification Models</h3>
+                <ul>
+                  <li>
+                    <span class="project-title">Close Ratio Analysis</span>
+                    <span class="project-desc">
+                      Binary classifier predicting likelihood of bind at quote time using producer and risk attributes.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="project-title">Claims Fraud Detection</span>
+                    <span class="project-desc">
+                      Fraud detection model to prioritize suspicious claims for SIU review.
+                    </span>
+                  </li>
+                </ul>
+              </li>
 
-                <li><h3>Regression Models</h3>
-                  <ul>
-                    <li>
-                      <span class="project-title">Insurance Pricing Models: GLM Methods</span>
-                      <span class="project-desc">
-                        Traditional GLM-based pricing framework with exposure, frequency, and severity components.
-                      </span>
-                    </li>
-                    <li>
-                      <span class="project-title">Insurance Pricing Models: Machine Learning Methods</span>
-                      <span class="project-desc">
-                        Machine learning models benchmarked against GLMs for improved rate segmentation.
-                      </span>
-                    </li>
-                  </ul>
-                </li>
+              <li><h3>Regression Models</h3>
+                <ul>
+                  <li>
+                    <span class="project-title">Insurance Pricing Models: GLM Methods</span>
+                    <span class="project-desc">
+                      Traditional GLM-based pricing framework with exposure, frequency, and severity components.
+                    </span>
+                  </li>
+                  <li>
+                    <span class="project-title">Insurance Pricing Models: Machine Learning Methods</span>
+                    <span class="project-desc">
+                      Machine learning models benchmarked against GLMs for improved rate segmentation.
+                    </span>
+                  </li>
+                </ul>
+              </li>
 
-                <li><h3>Model Delivery &amp; Deployment</h3>
-                  <ul>
-                    <li>
-                      <span class="project-title">Insurance Pricing Model API</span>
-                      <span class="project-desc">
-                        REST API serving pricing recommendations for real-time and batch rating workflows.
-                      </span>
-                    </li>
-                  </ul>
-                </li>
+              <li><h3>Model Delivery &amp; Deployment</h3>
+                <ul>
+                  <li>
+                    <span class="project-title">Insurance Pricing Model API</span>
+                    <span class="project-desc">
+                      REST API serving pricing recommendations for real-time and batch rating workflows.
+                    </span>
+                  </li>
+                </ul>
+              </li>
 
-                <li><h3>Post-Production Monitoring</h3>
-                  <ul>
-                    <li>
-                      <span class="project-title">Insurance Pricing Model</span>
-                      <span class="project-desc">
-                        Monitoring suite tracking lift, drift, calibration, and stability of deployed pricing models.
-                      </span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </p>
+              <li><h3>Post-Production Monitoring</h3>
+                <ul>
+                  <li>
+                    <span class="project-title">Insurance Pricing Model</span>
+                    <span class="project-desc">
+                      Monitoring suite tracking lift, drift, calibration, and stability of deployed pricing models.
+                    </span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
           
           <div id="contact" class="content-region hide">
